@@ -13,17 +13,17 @@ const movies = [
 
 const CariFilm = () => {
   return (
-    <div className="w-full flex flex-col px-10">
-      <div className="search mt-4 md:mt-0 w-full justify-center items-center">
-        <form className="max-w-md justify-center items-center ">
+    <div className="w-full min-h-screen flex flex-col items-center px-4 md:px-10">
+      <div className="flex flex-col justify-center items-center w-full">
+        <form className="w-full max-w-7xl px-4">
           <label
             htmlFor="default-search"
             className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
           >
             Search
           </label>
-          <div className="relative w-6xl">
-            <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+          <div className="relative">
+            <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
               <svg
                 className="w-4 h-4 text-gray-500 dark:text-gray-400"
                 aria-hidden="true"
@@ -43,15 +43,16 @@ const CariFilm = () => {
             <input
               type="search"
               id="default-search"
-              className="w-full p-4 ps-10 text-sm text-slate-500 border-b-2 border-slate-500 bg-transparent outline-0 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="block w-full p-4 pl-10 text-sm text-slate-500 border-b-2 border-slate-500 bg-transparent outline-0 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
               placeholder="Cari Film...."
               required
             />
           </div>
         </form>
       </div>
-      <div className="my-14">
-        <div className="mt-4 flex flex-row flex-wrap gap-4 md:gap-8 justify-start">
+
+      <div className="my-14 w-full md:ml-10">
+        <div className="mt-4 flex flex-row flex-wrap gap-4 md:gap-8 justify-center md:justify-start">
           {movies.map((movie) => (
             <MovieCard
               key={movie.id}

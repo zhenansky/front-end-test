@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className="w-full bg-[#090617] h-auto md:h-32 text-white shadow-md">
       <div className="container w-full h-full mx-auto py-4 px-4 md:pb-5 flex flex-col md:flex-row items-center justify-between">
         <div className="w-full flex flex-row items-center justify-between md:justify-normal">
-          <div className="text-xl font-semibold mr-0 md:mr-14">
+          <div className="text-xl font-semibold mr-0 md:mr-24">
             <Link to="/">
               <img src={Logo} alt="pluit sakti" className="h-12 md:h-auto" />
             </Link>
